@@ -21,6 +21,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/FIJKDebug.msg" # used in franka_client, franka_meta_quest, franka_visualization
   "msg/RigSnapshot.msg" # used in franka_data_collection, franka_client, zed_rig_agg
   "srv/SetPoseStamped.srv" # used in franka_meta_quest, robot_safety_layer
+  "srv/FinishEpisode.srv" # used in franka_data_collection, franka studio
     DEPENDENCIES std_msgs sensor_msgs geometry_msgs
 )
 

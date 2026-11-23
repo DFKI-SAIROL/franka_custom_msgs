@@ -1,0 +1,10 @@
+# Labels the data collector's stopped episode and files it below the collector's storage_path
+# (moved once its videos are encoded). The headless counterpart of the collector's labelling
+# window, used by Franka Studio.
+string task       # folder below storage_path, may be nested ("<dataset>/<task>"); no "..", not absolute
+string label      # one of the collector's labels (its read-only `labels` parameter)
+string metadata   # YAML mapping stored as mcap/episode_info.yaml next to lwk_metadata.yaml; "" for none
+---
+bool success
+string message
+string path       # the folder the episode is moved to
